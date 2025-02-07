@@ -1,8 +1,9 @@
+import Model.Adds;
 import Model.BeerBarel;
 import Model.BeerProducerInterface;
 import Model.WhiskeyBarel;
 
-public class BeerProducer implements BeerProducerInterface {
+public class BeerProducer implements BeerProducerInterface, Adds {
     private int malt = 0;
     private int temperatur = 0;
 
@@ -27,5 +28,4 @@ public class BeerProducer implements BeerProducerInterface {
         return new BeerBarel( volumeInliters,alcoholPercentage);}
 
     }
-
 }

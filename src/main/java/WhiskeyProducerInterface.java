@@ -1,11 +1,8 @@
+import Model.Adds;
 import Model.BeerBarel;
 import Model.WhiskeyBarel;
 
-public interface WhiskeyProducerInterface {
-
-    void addMalt(int amountOfMaltInKg);
-    void heatUrd(int temperatur);
+public interface WhiskeyProducerInterface extends Adds {
 
     WhiskeyBarel destillWhiskey(int volumeInliters);
-
 }
